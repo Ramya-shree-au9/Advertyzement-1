@@ -1,0 +1,110 @@
+.Homehead{
+    background-image: linear-gradient(to right, #FFCCFF ,#6666FF
+    );
+}
+
+.headersection{
+    display: flex;
+    justify-content:space-between;
+    margin: 0 4%;
+}
+
+.headline{
+    color:rgba(0, 0, 255, 0.479);
+}
+.userdet{
+    border:3px solid rgba(137, 43, 226, 0.418);
+    padding: .5% 2%;
+    font-size: larger;
+    color: orange;
+    cursor: pointer;
+    margin-right: 6%;
+}
+
+.brandname{
+    font-size: x-large;
+    color: crimson;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bodysection{
+    display: grid;
+    grid-template-columns:1fr 2fr
+}
+
+.subhead{
+    margin-top: 35%;
+    text-align: center;
+}
+
+.svgimg{
+    height: 86vh;
+    width: 95%;
+}
+
+.usersection{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    
+}
+.singleuserinfo{
+    border: 2px solid rgba(0, 0, 0, 0.39);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(255, 0, 0, 0.836);
+    text-align: center;
+    margin:6% 18%;
+}
+
+.singleuserinfo:hover{
+    transform: scale(1.02);
+}
+
+.userimg{
+   width: 200px;
+}
+.userhead{
+    text-align: center;
+    color:rgba(0, 0, 255, 0.486);
+    text-shadow: 2px 2px black;
+}
+
+.pagesetting{
+    display: flex;
+    left: 45%;
+    justify-content: space-around;
+    margin:5% 45% 0 45%;
+}
+
+.pagesetting > div {
+    border: 2px solid rgba(0, 0, 0, 0.425);
+    padding: 10%;
+    margin:0 9% 20% 9%;
+    cursor: pointer;
+}
+.pagesetting > p {
+    padding: 10%;
+    margin:0 9% 20% 9%;
+    cursor: pointer;
+}
+
+@media (min-width:600px) and (max-width: 900px) {
+    .usersection{
+        grid-template-columns:1fr 1fr;    
+
+    } 
+  }
+
+@media only screen and (max-width: 600px) {
+    .usersection{
+        grid-template-columns:1fr;   
+    } 
+    .userimg{
+        width: 150px;
+     }
+    .bodysection{
+        grid-template-columns:1fr
+    }
+    .subhead{
+        margin-top: 15%;
+    }
+  }
